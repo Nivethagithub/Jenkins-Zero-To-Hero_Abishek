@@ -97,6 +97,13 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 
 <img width="990" alt="Screenshot 2023-02-01 at 11 14 13 AM" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
 
+### Some consideration
+
+Jenkins architecture --> master-slave architecture
+Using Jenkins node has some limitations, like installing node.js version, for some projects different version i required, this results in conflicts. To solve this, we can use Docker containers as agent in the slave.
+
+
+### Step :2
 ## Install the Docker Pipeline plugin in Jenkins:
 
    - Log in to Jenkins.
@@ -109,7 +116,7 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 
 Wait for the Jenkins to be restarted.
 
-
+### Step :1
 ## Docker Slave Configuration
 
 Run the below command to Install Docker
@@ -128,13 +135,23 @@ usermod -aG docker ubuntu
 systemctl restart docker
 ```
 
-Once you are done with the above steps, it is better to restart Jenkins.
+Once you are done with the above steps, it is better to restart Jenkins. Just add restart at the end of the jenkins url in the same browser.
 
 ```
 http://<ec2-instance-public-ip>:8080/restart
 ```
 
 The docker agent configuration is now successful.
+
+
+### About Jenkins jobs
+
+FreeStyle job --> Job configurations are in the text box, even though it is easy it is not shareable to the team. No coding is required. This job cannot go through the workflow of modifying the changes in the PR. 
+
+To solve this problem --> Pipeline job are used. 
+
+Pipeline Job --> We can write script on our own
+
 
 
 
