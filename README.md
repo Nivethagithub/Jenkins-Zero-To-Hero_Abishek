@@ -150,7 +150,10 @@ FreeStyle job --> Job configurations are in the text box, even though it is easy
 
 To solve this problem --> Pipeline job are used. 
 
-Pipeline Job --> We can write script on our own
+Pipeline Job --> We can write script on our own.
+
+We can use codegenerator (groovy) to write our script. It generates the script required for the pipeline job, once we have declared the fields in the text box. 
+pipeline syntax --->  Select the required field (shell commands, git command configurations etc).  ---> give the appropriate inputs --> click generate code.
 
 
 
