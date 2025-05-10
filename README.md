@@ -102,6 +102,8 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 Jenkins architecture --> master-slave architecture
 Using Jenkins node has some limitations, like installing node.js version, for some projects different version i required, this results in conflicts. To solve this, we can use Docker containers as agent in the slave.
 
+Only when there is a request, the containers will be created. After that process, containers will be terminated/deleted.
+
 
 ### Step :2
 ## Install the Docker Pipeline plugin in Jenkins:
