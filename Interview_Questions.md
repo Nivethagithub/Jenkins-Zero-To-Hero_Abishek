@@ -152,7 +152,7 @@ Blue Ocean Plugin: While it's no longer under active development, Blue Ocean pro
 
 **Credentials Binding Plugin**: Security is paramount, and this plugin allows you to securely manage sensitive information like passwords, API tokens, and SSH keys within Jenkins without exposing them in plain text in your job configurations or build logs.   
 
-**Slack Notification Plugin **(or similar): Real-time communication is vital for DevOps teams. This plugin (or others like Microsoft Teams or email notification plugins) sends build status updates and notifications to your team's communication channels, ensuring everyone is informed about the CI/CD process.
+**Slack Notification Plugin** (or similar): Real-time communication is vital for DevOps teams. This plugin (or others like Microsoft Teams or email notification plugins) sends build status updates and notifications to your team's communication channels, ensuring everyone is informed about the CI/CD process.
 
 **Kubernetes Plugin**: For organizations leveraging Kubernetes for container orchestration, this plugin allows Jenkins to dynamically provision and manage build agents within a Kubernetes cluster, enabling scalable and efficient build infrastructure.   
 
